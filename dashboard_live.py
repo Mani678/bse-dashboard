@@ -94,7 +94,7 @@ try:
         st.markdown(f"""
         <div class='price-ticker'>
             <div style='font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 10px;'>LIVE TOKEN PRICE</div>
-            <div class='big-price'>${data['price']:.6f}</div>
+            <div class='big-price'>${data['price']:.8f}</div>
             <div style='font-size: 1.2rem; color: {"#10b981" if data["price_24h_change"] >= 0 else "#ef4444"}; margin-top: 10px;'>
                 {data['price_24h_change']:+.2f}% (24h)
             </div>
